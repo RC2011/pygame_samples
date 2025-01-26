@@ -1,11 +1,15 @@
-# pygame_samples
- # ステップ2
+ # pygame_samples
+ ## ステップ2
 
+ ### demo_01.py
  ウィンドウサイズ
- screen = pygame.display.set_mode([640, 480])
-
- 円の色と位置と大きさ(大きい方)!
- pygame.draw.circle(screen, (176, 176, 222), (320, 240), 120)
+ >~~~
+ >screen = pygame.display.set_mode([640, 480])
+ >~~~
+ 円の色と位置と大きさ(大きい方)
+ >~~~
+ >pygame.draw.circle(screen, (176, 176, 222), (320, 240), 120)
+ >~~~
 ![alt text]({B817F296-D188-4CCA-A1D5-43823583882F}.png)
 
  円の色と位置と大きさ(小さい方)
