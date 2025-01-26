@@ -11,5 +11,5 @@
  - seven_seg_pg.py: Seven_segクラス
  - lcd_font_pg.py: LCD_fontクラス
 
- 
+
  - 1234567890
