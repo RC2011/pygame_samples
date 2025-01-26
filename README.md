@@ -12,4 +12,3 @@
  - lcd_font_pg.py: LCD_fontクラスS
 
 
- - テスト
