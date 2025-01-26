@@ -11,3 +11,4 @@
  - demo_openmoji.py: オープンソースの絵文字、openmojiのデモ。キー操作のデモ。
  - seven_seg_pg.py: Seven_segクラス
  - lcd_font_pg.py: LCD_fontクラスS
+ <video controls src="demo_01.py - pygame_samples-main - Visual Studio Code 2024-11-03 11-32-49.mp4" title="Title"></video>
