@@ -16,7 +16,7 @@
  >~~~
  >pygame.display.set_caption("pygame demo - window title here")
  >~~~
- 
+
  円の色と位置と大きさ(大きい方)
  >~~~
  >pygame.draw.circle(screen, (176, 176, 222), (320, 240), 120)
@@ -38,3 +38,40 @@
  >~~~
  >pygame.draw.rect(screen, (120, 120, 120), Rect(120, 120, 200, 120))
  >~~~
+
+ 動く点のそれぞれの色
+ >~~~
+ >color_on = (240, 120, 120)
+ >color_off = (120, 120, 120)
+ >~~~
+
+ 動く点の縦の範囲
+ >~~~
+ >for y0 in range(7):
+ >~~~
+
+ 動く点の横の範囲
+ >~~~
+ >for x0 in range(5):
+ >~~~
+
+ ## ステップ3
+
+ ### demo_01.py
+ x座標を1ずつ増やす
+ >~~~
+ >x1 += 1
+ >~~~
+
+ x座標が4になったとき0にする
+ >~~~
+ >if x1 > 4:
+ >x1 = 0
+ >~~~
+
+ y座標を1ずつ増やす
+ >~~~
+ >y1 +=1
+ >~~~
+
+<video controls src="pygame demo - window title here 2025-01-26 14-18-56.mp4" title="Title"></video>
