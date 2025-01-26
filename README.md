@@ -1,18 +1,18 @@
 # pygame_samples
- - ステップ2
+ # ステップ2
 
- - ウィンドウサイズ
-screen = pygame.display.set_mode([640, 480])
+ ウィンドウサイズ
+ screen = pygame.display.set_mode([640, 480])
 
- - 円の色と位置と大きさ(大きい方)!
-pygame.draw.circle(screen, (176, 176, 222), (320, 240), 120)
+ 円の色と位置と大きさ(大きい方)!
+ pygame.draw.circle(screen, (176, 176, 222), (320, 240), 120)
 ![alt text]({B817F296-D188-4CCA-A1D5-43823583882F}.png)
 
- - 円の色と位置と大きさ(小さい方)
-pygame.draw.circle(screen, (222, 176, 222), (120, 120), 20)
-pygame.draw.circle(screen, (222, 176, 222), (120, 120), 20)
+ 円の色と位置と大きさ(小さい方)
+ pygame.draw.circle(screen, (222, 176, 222), (120, 120), 20)
+ pygame.draw.circle(screen, (222, 176, 222), (120, 120), 20)
 ![alt text]({DD0BCCDF-8562-4C5B-BBB3-B6AD235C6F98}.png)
 ![alt text]({38B1B330-F28A-43D9-9C76-7C8B424C7FDE}.png)
 
- - 長方形の色と位置と大きさ
-pygame.draw.rect(screen, (120, 120, 120), Rect(120, 120, 200, 120))
+ 長方形の色と位置と大きさ
+ pygame.draw.rect(screen, (120, 120, 120), Rect(120, 120, 200, 120))
