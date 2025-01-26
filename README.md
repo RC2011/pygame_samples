@@ -1,14 +1,12 @@
 # pygame_samples
-
- - demo_01.py: pygameの超簡単なデモ。
- ![alt text]({351637FE-B728-4C9C-BC47-1F23806352DA}.png)
- - demo_02.py: 7セグのシミュレーション、各セグメントを2ブロックで構成。Seven_segクラス使用。
- - demo_LCD_font_01.py: 5x7のLCDフォント制作用。LCD_fontクラス使用。
- - demo_LCD_font.py: 5x7のLCDフォント、完成版。
-
- - demo_freetype.py: pygame.freetypeでテキスト表示。（新しい方式）
- - demo_freetype.py: pygame.fontでテキスト表示。（古い方式）
- - demo_openmoji.py: オープンソースの絵文字、openmojiのデモ。キー操作のデモ。
- - seven_seg_pg.py: Seven_segクラス
- - lcd_font_pg.py: LCD_fontクラスS
- <video controls src="demo_01.py - pygame_samples-main - Visual Studio Code 2024-11-03 11-32-49.mp4" title="Title"></video>
+ - ステップ2
+ウィンドウサイズ
+screen = pygame.display.set_mode([640, 480])
+円の色と位置と大きさ(大きい方)![alt text]({14588630-5BF3-473C-8E8F-B863C601E9E2}.png)
+pygame.draw.circle(screen, (176, 176, 222), (320, 240), 120)
+円の色と位置と大きさ(小さい方)![alt text]({7312F7AD-FD66-4E10-993A-871E471086C4}.png)
+pygame.draw.circle(screen, (222, 176, 222), (120, 120), 20)
+pygame.draw.circle(screen, (222, 176, 222), (120, 120), 20)
+![alt text]({46636B95-25B5-431A-AA03-A88BB4894132}.png)
+長方形の色と位置と大きさ
+pygame.draw.rect(screen, (120, 120, 120), Rect(120, 120, 200, 120))
