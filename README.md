@@ -11,4 +11,4 @@
  - seven_seg_pg.py: Seven_segクラス
  - lcd_font_pg.py: LCD_fontクラスS
 
-
+![alt text]({7C609AFE-1394-45FF-A20C-A497EBD817F8}.png)
