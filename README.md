@@ -6,6 +6,17 @@
  >~~~
  >screen = pygame.display.set_mode([640, 480])
  >~~~
+
+ ウィンドウの色
+ >~~~
+ >screen.fill((238, 238, 170))
+ >~~~
+
+ タイトルバー
+ >~~~
+ >pygame.display.set_caption("pygame demo - window title here")
+ >~~~
+ 
  円の色と位置と大きさ(大きい方)
  >~~~
  >pygame.draw.circle(screen, (176, 176, 222), (320, 240), 120)
