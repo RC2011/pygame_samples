@@ -74,4 +74,4 @@
  >y1 +=1
  >~~~
 
- 
+<video controls src="pygame demo - window title here 2025-01-26 14-18-56.mp4" title="動画"></video>
