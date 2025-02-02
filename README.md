@@ -87,15 +87,15 @@
 
 これだとずっと下に行ってしまうので、上に戻す。
 
->~~~
->x1 += 1
+ >~~~
+ >x1 += 1
     if x1 > 4:
         x1 = 0
         y1 += 1
         if y1 > 6:
             y1 = 0
 
->~~~
+ >~~~
 
 
 ![pygamedemo-windowtitlehere2025-02-0219-32-33-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b5819b08-45c9-4733-9e94-bcce45051045)
