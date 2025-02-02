@@ -181,3 +181,13 @@
  >~~~
 
  ![alt text](image-1.png)
+
+ lcd1.update_col(col=0, code=8)という文のcol=の後の数字を変えて、code=の後の数字も変えると複数表示できる。
+
+ >~~~
+ >lcd1.update_col(col=0, code=0)
+ >lcd1.update_col(col=1, code=1)
+ >lcd1.update_col(col=2, code=2)
+ >~~~
+
+ ![alt text](image.png)
