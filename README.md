@@ -362,10 +362,13 @@
  >~~~
 
  display2.~とdisplay5.~のところをこのコマンドに置き換える
+
  display3.~とdisplay4.~は消した
 
  BLOCK_SIZE=7の7を変えることでドットの大きさを変えることができる。
+
  BLOCK_INTV=8の8を変えることでドット間のスペースを変えることができる。
+ 
  COLOR_ON=RED,COLOR_OFF=GRAYのREDとGRAYのところを変えることで色を変えることができる。
 
  >~~~
