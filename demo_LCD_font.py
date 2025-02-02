@@ -1,3 +1,4 @@
+
 # demo for handmade LCD font
 
 import pygame

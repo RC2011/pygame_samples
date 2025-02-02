@@ -74,7 +74,7 @@
  >y1 +=1
  >~~~
 
-https://git-lfs.github.com/<video controls src="200" title="画面録画 2025-01-27 165408-3.mp4"></video>
+https://git-lfs.github.com/<video controls src="2025-01-27_16-59-21 - rc.mp4" title="Title"></video>
 
 
 
