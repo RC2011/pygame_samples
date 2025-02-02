@@ -194,9 +194,9 @@
 
  ![alt text](image.png)
 
- ## ステップ5
+ ## ステップ5,ステップ6
 
- ### demo_02.py
+ ### demo_02.py,demo_LCD_font_01.py,demo_03.py
 
  demo_02.pyのカウント表示をLCDフォントで表示するようにする
 
@@ -372,4 +372,5 @@
  >lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, COLOR_OFF=GRAY)
  >~~~
 
- ![LCDfont2025-02-0220-34-281-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1dfc2367-92e4-47e0-b0ab-1aa14bb93f9e)
+![LCDfont2025-02-0220-34-282-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8bdb09cd-c359-4ff2-995a-8c298865bf97)
+
