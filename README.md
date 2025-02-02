@@ -334,3 +334,40 @@
  >        pygame.display.update()
  >        clock.tick(60)
  >~~~
+
+ その後、LCDフォントによる時刻表示を行う
+ lcd2が年月日の表示
+ lcd1が現在時刻
+
+ >~~~
+ >lcd2.update_col(col=0, code=int(str(dt_now.year)[0]))
+ >lcd2.update_col(col=1, code=int(str(dt_now.year)[1]))
+ >lcd2.update_col(col=2, code=int(str(dt_now.year)[2]))
+ >lcd2.update_col(col=3, code=int(str(dt_now.year)[3]))
+ >lcd2.update_col(col=4, code=10)
+ >lcd2.update_col(col=5, code=dt_now.month // 10)
+ >lcd2.update_col(col=6, code=dt_now.month % 10)
+ >lcd2.update_col(col=7, code=10)
+ >lcd2.update_col(col=8, code=dt_now.day // 10)
+ >lcd2.update_col(col=9, code=dt_now.day % 10)
+ >
+ >lcd1.update_col(col=0, code=dt_now.hour // 10)
+ >lcd1.update_col(col=1, code=dt_now.hour % 10)
+ >lcd1.update_col(col=2, code=11)
+ >lcd1.update_col(col=3, code=dt_now.minute // 10)
+ >lcd1.update_col(col=4, code=dt_now.minute % 10)
+ >lcd1.update_col(col=5, code=11)
+ >lcd1.update_col(col=6, code=dt_now.second // 10)
+ >lcd1.update_col(col=7, code=dt_now.second % 10)
+ >~~~
+
+ display2.~とdisplay5.~のところをこのコマンドに置き換える
+ display3.~とdisplay4.~は消した
+
+ BLOCK_SIZE=7の7を変えることでドットの大きさを変えることができる。
+ BLOCK_INTV=8の8を変えることでドット間のスペースを変えることができる。
+ COLOR_ON=RED,COLOR_OFF=GRAYのREDとGRAYのところを変えることで色を変えることができる。
+
+ >~~~
+ >lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, COLOR_OFF=GRAY)
+ >~~~
