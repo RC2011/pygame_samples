@@ -371,3 +371,5 @@
  >~~~
  >lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, COLOR_OFF=GRAY)
  >~~~
+
+ ![LCDfont2025-02-0220-34-281-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1dfc2367-92e4-47e0-b0ab-1aa14bb93f9e)
