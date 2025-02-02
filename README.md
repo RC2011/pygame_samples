@@ -74,6 +74,6 @@
  >y1 +=1
  >~~~
 
-https://git-lfs.github.com/!(pygamedemo-windowtitlehere2025-02-0218-20-241-ezgif.com-video-to-gif-converter.gif)
+https://github.com/RC2011/pygame_samples.wiki.git
 
 
