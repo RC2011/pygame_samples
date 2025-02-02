@@ -75,5 +75,6 @@
  >~~~
 
 https://github.com/RC2011/pygame_samples.wiki.git
+https://github.com/RC2011/pygame_samples.wiki.git
 
 
