@@ -172,3 +172,12 @@
  >         0, 0, 0, 0, 1,
  >         0, 1, 1, 1, 0)
  >~~~
+
+ demo_LCD_font_01.pyに移動し、line39の
+ code=codeの右を表したい数字に変える
+
+ >~~~
+ >lcd1.update_col(col=0, code=8)
+ >~~~
+
+ ![alt text](image-1.png)
