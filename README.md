@@ -182,6 +182,8 @@
 
  ![alt text](image-1.png)
 
+ ### demo_LCD_font_01.py
+
  lcd1.update_col(col=0, code=8)という文のcol=の後の数字を変えて、code=の後の数字も変えると複数表示できる。
 
  >~~~
@@ -191,3 +193,144 @@
  >~~~
 
  ![alt text](image.png)
+
+ ## ステップ5
+
+ ### demo_02.py
+
+ demo_02.pyのカウント表示をLCDフォントで表示するようにする
+
+ demo_LCD_font.pyからLCDフォントの表示の要素を抜き出し、demo_02.pyを複製して作るdemo_03.pyに取り込む。
+
+ >~~~
+ >clock = pygame.time.Clock()
+ >
+ >font1 = pygame.freetype.Font("fonts/natumemozi.ttf", 48)
+ >
+ >lcd1 = LCD_font(screen)
+ >lcd1.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=GREEN, >COLOR_OFF=GRAY)
+ >lcd1.init_row(X_ORG=10, Y_ORG=27, COL_INTV=6)
+ >
+ >
+ >def LCD_display(x, y):
+ >    code = int((x / 8) % 3)
+ >    text1, rect1 = font1.render(str(code), WHITE)
+ >    rect1.center = (x, y)
+ >    screen.blit(text1, rect1)
+ >    # LCD sim
+ >    lcd1.update_col(col=0, code=code)
+ >
+ >
+ >def infinite_loop():
+ >
+ >
+ >    x_change = 0
+ >    y_change = 0
+ >
+ >    running = True
+ >    while running:
+ >        for event in pygame.event.get():
+ >            if event.type == pygame.QUIT:
+ >                running = False
+ >            if event.type == pygame.KEYDOWN:
+ >                if event.key == pygame.K_LEFT:
+ >                    x_change = -1
+ >                if event.key == pygame.K_RIGHT:
+ >                    x_change = 1
+ >                if event.key == pygame.K_UP:
+ >                    y_change = -1
+ >                if event.key == pygame.K_DOWN:
+ >                    y_change = 1
+ >
+ >            if event.type == pygame.KEYUP:
+ >                if (
+ >                    event.key == pygame.K_LEFT
+ >                    or event.key == pygame.K_RIGHT
+ >                    or event.key == pygame.K_UP
+ >                    or event.key == pygame.K_DOWN
+ >                ):
+ >                    x_change = 0
+ >                    y_change = 0
+ >
+ >       x += x_change
+ >        y += y_change
+ >
+ >
+ >        if x < 0:
+ >            x = 0
+ >        if y < 0:
+ >            y = 0
+ >
+ >        screen.fill(GRAY)
+ >        LCD_display(x, y)
+ >
+ >        pygame.display.update()
+ >        clock.tick(60)
+ >
+ >
+ >
+ >running = True
+ >clock = pygame.time.Clock()
+ >
+ >font1 = pygame.freetype.Font("fonts/natumemozi.ttf", 48)
+ >
+ >lcd2 = LCD_font(screen)
+ >lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, >COLOR_OFF=GRAY)
+ >lcd2.init_row(X_ORG=5, Y_ORG=17, COL_INTV=6)
+ >
+ >
+ >def LCD_display(x, y):
+ >    code = int((x / 8) % 3)
+ >    text1, rect1 = font1.render(str(code), WHITE)
+ >    rect1.center = (x, y)
+ >    screen.blit(text1, rect1)
+ >    # LCD sim
+ >   lcd2.update_col(col=0, code=code)
+ >
+ >
+ >def infinite_loop():
+ >
+ >
+ >    x_change = 0
+ >    y_change = 0
+ >
+ >    running = True
+ >    while running:
+ >        for event in pygame.event.get():
+ >            if event.type == pygame.QUIT:
+ >                running = False
+ >            if event.type == pygame.KEYDOWN:
+ >                if event.key == pygame.K_LEFT:
+ >                    x_change = -1
+ >                if event.key == pygame.K_RIGHT:
+ >                    x_change = 1
+ >               if event.key == pygame.K_UP:
+ >                   y_change = -1
+ >                if event.key == pygame.K_DOWN:
+ >                    y_change = 1
+ >
+ >           if event.type == pygame.KEYUP:
+ >                if (
+ >                    event.key == pygame.K_LEFT
+ >                    or event.key == pygame.K_RIGHT
+ >                    or event.key == pygame.K_UP
+ >                    or event.key == pygame.K_DOWN
+ >                ):
+ >                    x_change = 0
+ >                    y_change = 0
+ >
+ >        x += x_change
+ >        y += y_change
+ >
+ >
+ >        if x < 0:
+ >            x = 0
+ >        if y < 0:
+ >            y = 0
+ >
+ >        screen.fill(GRAY)
+ >        LCD_display(x, y)
+ >
+ >        pygame.display.update()
+ >        clock.tick(60)
+ >~~~

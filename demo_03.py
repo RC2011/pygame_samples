@@ -215,7 +215,7 @@ clock = pygame.time.Clock()
 font1 = pygame.freetype.Font("fonts/natumemozi.ttf", 48)
 
 lcd2 = LCD_font(screen)
-lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=GREEN, COLOR_OFF=GRAY)
+lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, COLOR_OFF=GRAY)
 lcd2.init_row(X_ORG=5, Y_ORG=17, COL_INTV=6)
 
 
