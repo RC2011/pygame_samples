@@ -74,7 +74,6 @@
  >y1 +=1
  >~~~
 
-https://github.com/RC2011/pygame_samples.wiki.git
-https://github.com/RC2011/pygame_samples.wiki.git
 
+![demo](https://github.com/user-attachments/assets/152740b6-5f07-432b-a6f0-b2d6216d2f26.gif)
 
