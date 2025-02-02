@@ -74,7 +74,7 @@
  >y1 +=1
  >~~~
 
-https://git-lfs.github.com/<video controls src="pygame demo - window title here 2025-01-26 14-18-56.mp4" title="Title"></video>
+https://git-lfs.github.com/<video controls src="画面録画 2025-01-27 165408.mp4" title="Title"></video>
 
 
 
