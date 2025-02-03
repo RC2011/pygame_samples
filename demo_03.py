@@ -7,107 +7,6 @@ from seven_seg_pg import Seven_seg
 from lcd_font_pg import LCD_font
 
 
-
-LCD_0 = (0, 1, 1, 1, 0,
-         1, 0, 0, 0, 1,
-         1, 0, 0, 1, 1,
-         1, 0, 1, 0, 1,
-         1, 1, 0, 0, 1,
-         1, 0, 0, 0, 1,
-         0, 1, 1, 1, 0)
-
-LCD_1 = (0, 0, 1, 0, 0,
-         0, 1, 1, 0, 0,
-         0, 0, 1, 0, 0,
-         0, 0, 1, 0, 0,
-         0, 0, 1, 0, 0,
-         0, 0, 1, 0, 0,
-         0, 1, 1, 1, 0)
-
-LCD_2 = (0, 1, 1, 1, 0,
-         1, 0, 0, 0, 1,
-         0, 0, 0, 0, 1,
-         0, 0, 0, 1, 0,
-         0, 0, 1, 0, 0,
-         0, 1, 0, 0, 0,
-         1, 1, 1, 1, 1)
-
-LCD_3 = (0, 1, 1, 1, 0,
-         1, 0, 0, 0, 1,
-         0, 0, 0, 0, 1,
-         0, 1, 1, 1, 0,
-         0, 0, 0, 0, 1,
-         1, 0, 0, 0, 1,
-         0, 1, 1, 1, 0)
-
-LCD_4 = (0, 0, 0, 1, 0,
-         0, 0, 1, 1, 0,
-         0, 1, 0, 1, 0,
-         1, 0, 0, 1, 0,
-         1, 1, 1, 1, 1,
-         0, 0, 0, 1, 0,
-         0, 0, 0, 1, 0)
-
-LCD_5 = (1, 1, 1, 1, 1,
-         1, 0, 0, 0, 0,
-         1, 0, 0, 0, 0,
-         1, 1, 1, 1, 0,
-         0, 0, 0, 0, 1,
-         1, 0, 0, 0, 1,
-         0, 1, 1, 1, 0)
-
-LCD_6 = (0, 1, 1, 1, 0,
-         1, 0, 0, 0, 0,
-         1, 0, 0, 0, 0,
-         1, 1, 1, 1, 0,
-         1, 0, 0, 0, 1,
-         1, 0, 0, 0, 1,
-         0, 1, 1, 1, 0)
-
-LCD_7 = (1, 1, 1, 1, 1,
-         1, 0, 0, 0, 1,
-         0, 0, 0, 0, 1,
-         0, 0, 0, 1, 0,
-         0, 0, 0, 1, 0,
-         0, 0, 1, 0, 0,
-         0, 0, 1, 0, 0)
-
-LCD_8 = (0, 1, 1, 1, 0,
-         1, 0, 0, 0, 1,
-         1, 0, 0, 0, 1,
-         0, 1, 1, 1, 0,
-         1, 0, 0, 0, 1,
-         1, 0, 0, 0, 1,
-         0, 1, 1, 1, 0)
-
-LCD_9 = (0, 1, 1, 1, 0,
-         1, 0, 0, 0, 1,
-         1, 0, 0, 0, 1,
-         0, 1, 1, 1, 1,
-         0, 0, 0, 0, 1,
-         0, 0, 0, 0, 1,
-         0, 1, 1, 1, 0)
-
-LCD_10 = (0, 0, 0, 0, 0,
-          0, 0, 0, 0, 0,
-          0, 0, 0, 0, 0,
-          1, 1, 1, 1, 1,
-          0, 0, 0, 0, 0,
-          0, 0, 0, 0, 0,
-          0, 0, 0, 0, 0,)
-
-LCD_11 = (0, 0, 0, 0, 0,
-          0, 1, 1, 0, 0,
-          0, 1, 1, 0, 0,
-          0, 0, 0, 0, 0,
-          0, 1, 1, 0, 0,
-          0, 1, 1, 0, 0,
-          0, 0, 0, 0, 0,)
-
-
-LCD_font_styles = (LCD_0, LCD_1, LCD_2, LCD_3, LCD_4, LCD_5, LCD_6, LCD_7, LCD_8, LCD_9, LCD_10, LCD_11)
-
-
 DARK_GRAY = (40, 40, 40)
 GRAY = (80, 80, 80)
 RED = (255, 0, 0)
@@ -124,28 +23,12 @@ screen = pygame.display.set_mode([550, 320])
 pygame.display.set_caption("pygame 7-segment display simulation")
 screen.fill(DARK_GRAY)
 
-display1 = Seven_seg(screen)
-display1.init_col(BLOCK_SIZE=9, BLOCK_INTV=10, COLOR_ON=GREEN, COLOR_OFF=DARK_GRAY)
-display1.init_row(X_ORG=8, Y_ORG=15, COL_INTV=6)
-# 一番下の数字
-
-display2 = Seven_seg(screen)
-display2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, COLOR_OFF=GRAY)
-display2.init_row(X_ORG=2, Y_ORG=18, COL_INTV=6)
-# 真ん中の数字
 
 display5 = Seven_seg(screen)
 display5.init_col(BLOCK_SIZE=9, BLOCK_INTV=9, COLOR_ON=(120, 200, 250), COLOR_OFF=GRAY)
 display5.init_row(X_ORG=13, Y_ORG=11, COL_INTV=6)
 # 上の数字
 
-pygame.init()
-
-pygame.display.set_caption("LCD font")
-
-clock = pygame.time.Clock()
-
-font1 = pygame.freetype.Font("fonts/natumemozi.ttf", 48)
 
 lcd1 = LCD_font(screen)
 lcd1.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=GREEN, COLOR_OFF=GRAY)
@@ -153,53 +36,8 @@ lcd1.init_row(X_ORG=10, Y_ORG=27, COL_INTV=6)
 
 
 def LCD_display(x, y):
-    code = int((x / 8) % 3)
-    text1, rect1 = font1.render(str(code), WHITE)
-    rect1.center = (x, y)
-    screen.blit(text1, rect1)
-    # LCD sim
-    lcd1.update_col(col=0, code=code)
+    lcd1.update_col(col=0)
 
-
-def infinite_loop():
-
-
-    x_change = 0
-    y_change = 0
-
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:
-                    x_change = -1
-                if event.key == pygame.K_RIGHT:
-                    x_change = 1
-                if event.key == pygame.K_UP:
-                    y_change = -1
-                if event.key == pygame.K_DOWN:
-                    y_change = 1
-
-            if event.type == pygame.KEYUP:
-                if (
-                    event.key == pygame.K_LEFT
-                    or event.key == pygame.K_RIGHT
-                    or event.key == pygame.K_UP
-                    or event.key == pygame.K_DOWN
-                ):
-                    x_change = 0
-                    y_change = 0
-
-        x += x_change
-        y += y_change
-
- 
-        if x < 0:
-            x = 0
-        if y < 0:
-            y = 0
 
 lcd2 = LCD_font(screen)
 lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, COLOR_OFF=GRAY)
@@ -207,62 +45,12 @@ lcd2.init_row(X_ORG=5, Y_ORG=17, COL_INTV=6)
 
 
 def LCD_display(x, y):
-    code = int((x / 8) % 3)
-    text1, rect1 = font1.render(str(code), WHITE)
-    rect1.center = (x, y)
-    screen.blit(text1, rect1)
-    # LCD sim
-    lcd2.update_col(col=0, code=code)
+    lcd2.update_col(col=0)
 
 
 def infinite_loop():
-
-
-    x_change = 0
-    y_change = 0
-
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:
-                    x_change = -1
-                if event.key == pygame.K_RIGHT:
-                    x_change = 1
-                if event.key == pygame.K_UP:
-                    y_change = -1
-                if event.key == pygame.K_DOWN:
-                    y_change = 1
-
-            if event.type == pygame.KEYUP:
-                if (
-                    event.key == pygame.K_LEFT
-                    or event.key == pygame.K_RIGHT
-                    or event.key == pygame.K_UP
-                    or event.key == pygame.K_DOWN
-                ):
-                    x_change = 0
-                    y_change = 0
-
-        x += x_change
-        y += y_change
-
- 
-        if x < 0:
-            x = 0
-        if y < 0:
-            y = 0
-
-        screen.fill(GRAY)
-        LCD_display(x, y)
-
-        pygame.display.update()
-        clock.tick(60)
-
-
-
+                x_change = 0
+                y_change = 0
 running = True
 # infinite loop top ----
 while running:
