@@ -377,3 +377,16 @@
 
 ![LCDfont2025-02-0220-34-282-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8bdb09cd-c359-4ff2-995a-8c298865bf97)
 
+## ステップ7
+
+### MINECRAFT_REMOTE_ITKIDS
+
+https://github.com/RC2011/minecraft_remote_itkids
+
+itkids9→kadai_00_NT_naohiro2g→param_MCJE.pyの7行目のPLAYER_NAME = のあとにマイクラ世界での自分の名前を、8行目に自分の区画の原点の座標を書く。
+
+その後、12行目のADRS_MCR = "c2cc.mydns.jp" 15行目のPORT_MCR = 25575と書く。
+
+そうしてhello.pyやkadai_01.pyを使うとマイクラ世界でメッセージが出たり、ブロックを置けるようになる。
+
+![alt text](image-2.png)
