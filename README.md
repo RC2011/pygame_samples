@@ -206,21 +206,21 @@
  >lcd1 = LCD_font(screen)
  >lcd1.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=GREEN, COLOR_OFF=GRAY)
  >lcd1.init_row(X_ORG=10, Y_ORG=27, COL_INTV=6)
- 
- 
+ >
+ >
  >def LCD_display(x, y):
  >    lcd1.update_col(col=0)
- 
- 
+ >
+ >
  >lcd2 = LCD_font(screen)
  >lcd2.init_col(BLOCK_SIZE=7, BLOCK_INTV=8, COLOR_ON=RED, COLOR_OFF=GRAY)
  >lcd2.init_row(X_ORG=5, Y_ORG=17, COL_INTV=6)
- 
- 
+ >
+ >
  >def LCD_display(x, y):
  >    lcd2.update_col(col=0)
- 
- 
+ >
+ >
  >def infinite_loop():
  >~~~
 
