@@ -180,7 +180,7 @@
  >lcd1.update_col(col=0, code=8)
  >~~~
 
- ![alt text](image-1.png)
+ ![alt text](image-2.png)
 
  ### demo_LCD_font_01.py
 
@@ -192,7 +192,7 @@
  >lcd1.update_col(col=2, code=2)
  >~~~
 
- ![alt text](image.png)
+ ![alt text](image-1.png)
 
  ## ステップ5,ステップ6
 
@@ -278,4 +278,4 @@ itkids9→kadai_00_NT_naohiro2g→param_MCJE.pyの7行目のPLAYER_NAME = のあ
 
 そうしてhello.pyやkadai_01.pyを使うとマイクラ世界でメッセージが出たり、ブロックを置けるようになる。
 
-![alt text](image-2.png)
+![alt text](image.png)
