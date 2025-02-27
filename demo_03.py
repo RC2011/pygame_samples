@@ -5,6 +5,8 @@ from datetime import datetime
 import pygame
 from seven_seg_pg import Seven_seg
 from lcd_font_pg import LCD_font
+from lcd_font_pg import LCD_font_styles
+from pygame.locals import Rect
 
 
 DARK_GRAY = (40, 40, 40)
@@ -120,7 +122,7 @@ class LCD_font():
         # 各桁のブロック間隔をブロック数で指定（インターバル）
         self.COL_INTV = COL_INTV * self.BLOCK_INTV
 
-    def update_col(self, col=0, code=9):  # ある桁にある文字を表示する関数
+    def update_col(self, col=0, code=0):  # ある桁にある文字を表示する関数
         # codeの文字をcol桁目に表示、桁は最上位桁の左から右へ進む。
         block_size = self.BLOCK_SIZE
         i = 0
