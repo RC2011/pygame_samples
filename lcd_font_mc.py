@@ -2,32 +2,7 @@
 # 5x7ドットマトリクス
 
 # from math import log
-import pygame
-from pygame.locals import Rect
-from lcd_font_pg import LCD_font as LCD_font_pg
-from datetime import datetime
-import pygame
-
-from lcd_font_pg import LCD_font
-
-import sys
-
-from mcje.minecraft import Minecraft
 import param_MCJE as param
-from param_MCJE import PLAYER_ORIGIN as po
-
-mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
-result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
-if ("Error" in result):
-    sys.exit(result)
-else:
-    print(result)
-
-pygame.init()
-
-
-clock = pygame.time.Clock()
-
 
 
 
@@ -175,5 +150,5 @@ class LCD_font():
                 # ドットの原点座標
                 #org1 = (x0 + x * self.BLOCK_INTV, y0 + y * self.BLOCK_INTV)
                 # ドットを描く
-                mc.setBlock(x0 + x, y0 - y, z0, color)
+                self.mc.setBlock(x0 + x, y0 - y, z0, color)
                 i += 1
