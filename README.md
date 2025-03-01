@@ -270,7 +270,7 @@
  
  ### MINECRAFT_REMOTE_ITKIDS
 
- https://github.com/RC2011/minecraft_remote_itkids
+ https://github.com/Naohiro2g/minecraft_remote_itkids
 
  itkids9→kadai_00_NT_naohiro2g→param_MCJE.pyの7行目のPLAYER_NAME = のあとにマイクラ世界での自分の名前を、8行目に自分の区画の原点の座標を書く。
 
@@ -279,3 +279,109 @@
  そうしてhello.pyやkadai_01.pyを使うとマイクラ世界でメッセージが出たり、ブロックを置けるようになる。
 
  ![alt text](images/image.png)
+
+ ## ステップ8
+
+ ### lcd_font_pg.py,MINECRAFT_REMOTE_ITKIDS
+
+ https://github.com/Naohiro2g/minecraft_remote_itkids
+
+
+ 必要なものをMINECRAFT_REMOTE_ITKIDSからコピーしてPYGAME_SAMPLESにもってくる(mcje,param_MCJE.py)
+  ステップ4で使ったLCD_font_pg.pyを複製して、LCD_font_mc.pyにをつくる
+ lcd_font_mc.pyは実行する部分がないため、新たにdotto_mc.pyをつくり(dotto_mcという名前は変えてもいい)、必要なモジュールをインポートする
+ 
+ lcd_font_mc.py
+
+ >~~~
+ >import param_MCJE as param
+ >~~~
+
+ dotto_mc.py
+
+ >~~~
+ >import sys
+ >
+ >from mcje.minecraft import Minecraft
+ >import param_MCJE as param
+ >from param_MCJE import PLAYER_ORIGIN as po
+ >
+ >from lcd_font_mc import LCD_font as LCD_font_mc
+ >from lcd_font_mc import LCD_font_styles
+ >
+ >from datetime import datetime
+ >~~~
+
+ ![alt text](images/image-3.png)
+
+ ここのところはマイクラ世界にGRAYやWHITEなどというふうに表示できないため、どのブロックで書くかを指定する。そして、BLOCK_SIZEやBLOCK_INTVは関係ないので消す。
+
+ ![alt text](images/image-4.png)
+
+
+ ![alt text](images/image-5.png)
+
+ ここはZ座標について書かれていないので、それを加えるのとself.X_ORGやY_ORGのところで計算をしないようにする。
+
+ ![alt text](images/image-6.png)
+
+ ![alt text](images/image-7.png)
+
+ 桁の原点にはlcd_font_pg.pyにはなかった、Z_ORGを加える。
+
+ ![alt text](images/image-8.png)
+
+ ![alt text](images/image-9.png)
+
+ ドットの原点座標はコメント化して、消す。
+ "ドットを描く"のところはpygameではなくマイクラに書くので、pygame.draw.rectからself.mc.setBlockに変えて、中身もドットを書く座標を示すように変える。
+
+ ![alt text](images/image-10.png)
+
+ これでlcd_font_mc.pyは完成。
+ 次はこれを実行するプログラム"dotto_mc.py"の方をつくる
+ 
+ まず必要なモジュールをインポートする
+ >~~~
+ >import sys
+ >
+ >from mcje.minecraft import Minecraft
+ >import param_MCJE as param
+ >from param_MCJE import PLAYER_ORIGIN as po
+ >
+ >from lcd_font_mc import LCD_font as LCD_font_mc
+ >from lcd_font_mc import LCD_font_styles
+ >
+ >from datetime import datetime
+ >~~~
+
+ 次にmcを定義したり、自分の区画の原点をセットしたりする。
+
+ ![alt text](images/image-11.png)
+
+ そして、年月日を表示するブロックを指定したり、座標を指定したりするプログラムを書く。
+ 
+ display2を定義する
+ ![alt text](images/image-12.png)
+
+ 使うブロックを指定する
+ ![alt text](images/image-13.png)
+
+ 座標を指定する
+ ![alt text](images/image-14.png)
+ 
+ 年月日についてのプログラムを書く
+ ![alt text](images/image-15.png)
+
+ 年月日を表示するプログラムをdemo_03.pyからコピーして持ってくる
+ ![alt text](images/image-16.png)
+
+ あとはdisplay3をつくり、それに現在時刻を表示させるようにする。
+ ![alt text](images/image-17.png)
+ ![alt text](images/image-18.png)
+
+ あとはマイクラの公開サーバーを起動して、dotto_mc.pyを実行するだけで指定した座標に年月日と現在時刻を表示させることができる。
+
+年月日を鉄ブロックで表示して、現在時刻を金ブロックで表示させた
+ ![alt text](images/image-19.png)
+ https://github.com/RC2011/pygame_samples.wiki.git

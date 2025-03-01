@@ -4,14 +4,10 @@ from mcje.minecraft import Minecraft
 import param_MCJE as param
 from param_MCJE import PLAYER_ORIGIN as po
 
-
 from lcd_font_mc import LCD_font as LCD_font_mc
 from lcd_font_mc import LCD_font_styles
 
 from datetime import datetime
-
-import pygame
-from seven_seg_pg import Seven_seg
 
 mc = Minecraft.create(address=param.ADRS_MCR, port=param.PORT_MCR)
 result = mc.setPlayer(param.PLAYER_NAME, po.x, po.y, po.z)
@@ -26,7 +22,7 @@ display2.init_col(COLOR_ON=param.IRON_BLOCK, COLOR_OFF=param.AIR)
 display2.init_row(X_ORG=-35, Y_ORG=param.Y_SEA + 61, Z_ORG=-20, COL_INTV=6)
 
 display3 = LCD_font_mc(mc)
-display3.init_col(COLOR_ON=param.IRON_BLOCK, COLOR_OFF=param.AIR)
+display3.init_col(COLOR_ON=param.GOLD_BLOCK, COLOR_OFF=param.AIR)
 display3.init_row(X_ORG=-35, Y_ORG=param.Y_SEA + 51, Z_ORG=-20, COL_INTV=6)
 
 dt_now = datetime.now()
