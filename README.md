@@ -384,4 +384,4 @@
 
  年月日を鉄ブロックで表示して、現在時刻を金ブロックで表示させた
  ![alt text](images/image-19.png)
- ![Minecraft1 21 4-2025-03-0120-14-53-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b5ee1897-fba5-4838-a53f-bafcd0ca8d72)
+ ![Minecraft1 21 4-2025-03-0120-27-27-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c3950115-d46d-4d81-8298-2e9dae05ea23)
