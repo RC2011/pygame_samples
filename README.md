@@ -384,4 +384,17 @@
 
  年月日を鉄ブロックで表示して、現在時刻を金ブロックで表示させた
  ![alt text](images/image-19.png)
- ![Minecraft1 21 4-2025-03-0120-27-27-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c3950115-d46d-4d81-8298-2e9dae05ea23)
+ ![Minecraft1 21 4-2025-03-0121-21-43-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2758cece-9010-4085-afc2-8979a81127c0)
+
+## 自主的に取り組んだもの
+
+### lcd_font_mc.py,mozi.py
+
+lcd_font_mc.pyに大文字のA~Z小文字のa~zのLCD_fontをつくった。
+
+dotto_mc.pyをコピーして、年月日と現在時刻を表示するところをなくして、code=に書きたいアルファベットをいれるとマイクラ世界にそれを表示させることができる。
+![alt text](images/image-20.png)
+              ↓
+![alt text](images/image-21.png)
+
+![alt text](images/image-22.png)
