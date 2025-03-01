@@ -533,8 +533,32 @@ LCD_z = (0, 0, 0, 0, 0,
          0, 1, 0, 0, 0,
          1, 1, 1, 1, 1)
 
+LCD_aposutorofi = (0, 0, 1, 1, 0,
+                   0, 0, 1, 1, 0,
+                   0, 0, 0, 1, 0,
+                   0, 0, 1, 0, 0,
+                   0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0)
 
-LCD_font_styles = (LCD_0, LCD_1, LCD_2, LCD_3, LCD_4, LCD_5, LCD_6, LCD_7, LCD_8, LCD_9, LCD_10, LCD_11, LCD_12, LCD_13, LCD_A, LCD_B, LCD_C, LCD_D, LCD_E, LCD_F, LCD_G, LCD_H, LCD_I, LCD_J, LCD_K, LCD_L, LCD_M, LCD_N, LCD_O, LCD_P, LCD_Q, LCD_R, LCD_S, LCD_T, LCD_U, LCD_V, LCD_W, LCD_X, LCD_Y, LCD_Z, LCD_a, LCD_b, LCD_c, LCD_d, LCD_e, LCD_f, LCD_g, LCD_h, LCD_i, LCD_j, LCD_k, LCD_l, LCD_m, LCD_n, LCD_o, LCD_p, LCD_q, LCD_r, LCD_s, LCD_t, LCD_u, LCD_v, LCD_w, LCD_x, LCD_y, LCD_z)
+LCD_piriodo = (0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0,
+               0, 0, 1, 1, 0,
+               0, 0, 1, 1, 0)
+
+LCD_konma = (0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0,
+               0, 0, 1, 1, 0,
+               0, 0, 1, 1, 0,
+               0, 0, 0, 1, 0)
+
+
+LCD_font_styles = (LCD_0, LCD_1, LCD_2, LCD_3, LCD_4, LCD_5, LCD_6, LCD_7, LCD_8, LCD_9, LCD_10, LCD_11, LCD_12, LCD_13, LCD_A, LCD_B, LCD_C, LCD_D, LCD_E, LCD_F, LCD_G, LCD_H, LCD_I, LCD_J, LCD_K, LCD_L, LCD_M, LCD_N, LCD_O, LCD_P, LCD_Q, LCD_R, LCD_S, LCD_T, LCD_U, LCD_V, LCD_W, LCD_X, LCD_Y, LCD_Z, LCD_a, LCD_b, LCD_c, LCD_d, LCD_e, LCD_f, LCD_g, LCD_h, LCD_i, LCD_j, LCD_k, LCD_l, LCD_m, LCD_n, LCD_o, LCD_p, LCD_q, LCD_r, LCD_s, LCD_t, LCD_u, LCD_v, LCD_w, LCD_x, LCD_y, LCD_z, LCD_aposutorofi, LCD_piriodo, LCD_konma)
 
 
 

@@ -370,19 +370,19 @@
  座標を指定する
  ![alt text](images/image-14.png)
  
- 年月日についてのプログラムを書く
+ 年月日、現在時刻についてのプログラムを書く
  ![alt text](images/image-15.png)
 
  年月日を表示するプログラムをdemo_03.pyからコピーして持ってくる
  ![alt text](images/image-16.png)
 
- あとはdisplay3もつくり、それに現在時刻を表示させるようにする。
+ そして、display3もつくり、それに現在時刻を表示させるようにする。
  ![alt text](images/image-17.png)
  ![alt text](images/image-18.png)
 
  あとはマイクラの公開サーバーを起動して、dotto_mc.pyを実行するだけで指定した座標に年月日と現在時刻を表示させることができる。
 
- 年月日を鉄ブロックで表示して、現在時刻を金ブロックで表示させた
+ 年月日を鉄ブロックで表示して、現在時刻を金ブロックで表示させた。
  ![alt text](images/image-19.png)
  ![Minecraft1 21 4-2025-03-0121-21-43-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2758cece-9010-4085-afc2-8979a81127c0)
 
@@ -392,7 +392,7 @@
 
 lcd_font_mc.pyに大文字のA～Z小文字のa～zのLCD_fontをつくった。
 
-dotto_mc.pyをコピーして、年月日と現在時刻を表示するところをなくして、code=に書きたいアルファベットの番号をいれるとマイクラ世界にそれを表示させることができる。
+dotto_mc.pyをコピーしてmozi.pyをつくり、年月日と現在時刻を表示するところをなくして、code=に書きたいアルファベットの番号をいれるとマイクラ世界に文字を表示させることができる。
 ![alt text](images/image-20.png)
               →
 ![alt text](images/image-21.png)
