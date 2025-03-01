@@ -334,7 +334,7 @@
  ![alt text](images/image-9.png)
 
  ドットの原点座標はコメント化して、消す。
- "ドットを描く"のところはpygameではなくマイクラに書くので、pygame.draw.rectからself.mc.setBlockに変えて、中身もドットを書く座標を示すように変える。
+ "ドットを描く"のところはpygameではなくマイクラに書くので、pygame.draw.rectからself.mc.setBlockに変えて、中身もドットを書く座標を指定するように変える。
 
  ![alt text](images/image-10.png)
 
