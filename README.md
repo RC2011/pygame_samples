@@ -393,6 +393,7 @@
 lcd_font_mc.pyに大文字のA～Z小文字のa～zのLCD_fontをつくった。
 
 dotto_mc.pyをコピーしてmozi.pyをつくり、年月日と現在時刻を表示するところをなくして、code=に書きたいアルファベットの番号をいれるとマイクラ世界に文字を表示させることができる。
+
 ![alt text](images/image-20.png)
               →
 ![alt text](images/image-21.png)
