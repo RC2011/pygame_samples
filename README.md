@@ -376,12 +376,12 @@
  年月日を表示するプログラムをdemo_03.pyからコピーして持ってくる
  ![alt text](images/image-16.png)
 
- あとはdisplay3をつくり、それに現在時刻を表示させるようにする。
+ あとはdisplay3もつくり、それに現在時刻を表示させるようにする。
  ![alt text](images/image-17.png)
  ![alt text](images/image-18.png)
 
  あとはマイクラの公開サーバーを起動して、dotto_mc.pyを実行するだけで指定した座標に年月日と現在時刻を表示させることができる。
 
-年月日を鉄ブロックで表示して、現在時刻を金ブロックで表示させた
+ 年月日を鉄ブロックで表示して、現在時刻を金ブロックで表示させた
  ![alt text](images/image-19.png)
- https://github.com/RC2011/pygame_samples.wiki.git
+ (https://github.com/user-attachments/assets/b5ee1897-fba5-4838-a53f-bafcd0ca8d72)
